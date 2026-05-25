@@ -1,4 +1,4 @@
-import { type ActionFunctionArgs, type LoaderFunctionArgs, json } from '@remix-run/cloudflare';
+import { type ActionFunctionArgs, type LoaderFunctionArgs, json } from '@remix-run/node';
 import type { VercelProjectInfo } from '~/types/vercel';
 
 // Add loader function to handle GET requests
@@ -48,10 +48,10 @@ export async function loader({ request }: LoaderFunctionArgs) {
       },
       deploy: latestDeployment
         ? {
-            id: latestDeployment.id,
-            state: latestDeployment.state,
-            url: latestDeployment.url ? `https://${latestDeployment.url}` : `https://${projectData.name}.vercel.app`,
-          }
+          id: latestDeployment.id,
+          state: latestDeployment.state,
+          url: latestDeployment.url ? `https://${latestDeployment.url}` : `https://${projectData.name}.vercel.app`,
+        }
         : null,
     });
   } catch (error) {
