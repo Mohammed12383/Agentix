@@ -1,0 +1,34 @@
+
+> my-v0-project@0.1.0 dev C:\Users\moham.DESKTOP-SCPAT4M\Downloads\video-loading-issue
+> next dev "--port" "3000"
+
+▲ Next.js 16.2.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.20:3000
+✓ Ready in 1268ms
+Creating turbopack project {
+  dir: 'C:\\Users\\moham.DESKTOP-SCPAT4M\\Downloads\\video-loading-issue',
+  testMode: true
+}
+
+○ Compiling /landing ...
+ GET /landing 200 in 2.9s (next.js: 2.5s, application-code: 429ms)
+ GET /landing 200 in 7.4s (next.js: 6.7s, application-code: 711ms)
+ GET /landing 200 in 299ms (next.js: 17ms, application-code: 282ms)
+ GET /landing 200 in 40ms (next.js: 12ms, application-code: 28ms)
+ GET /landing 200 in 78ms (next.js: 12ms, application-code: 67ms)
+ GET /landing 200 in 26ms (next.js: 11ms, application-code: 15ms)
+ GET /landing 200 in 128ms (next.js: 7ms, application-code: 121ms)
+ GET /pricing 200 in 1350ms (next.js: 1121ms, application-code: 229ms)
+ GET /login 404 in 3.0s (next.js: -358056µs, proxy.ts: 3.0s, application-code: 369ms)
+ GET /login 404 in 139ms (next.js: -30674µs, proxy.ts: 125ms, application-code: 44ms)
+✓ Compiled in 639ms
+ GET /login 404 in 847ms (next.js: -30704µs, proxy.ts: 826ms, application-code: 51ms)
+ GET /landing 200 in 1463ms (next.js: 364ms, application-code: 1099ms)
+ GET /landing 200 in 659ms (next.js: 27ms, application-code: 632ms)
+ GET /landing 200 in 241ms (next.js: 116ms, application-code: 125ms)
+ GET /landing 200 in 242ms (next.js: 26ms, application-code: 216ms)
+ GET /landing 200 in 241ms (next.js: 161ms, application-code: 80ms)
+ GET /landing 200 in 115ms (next.js: 8ms, application-code: 107ms)
+ GET /landing 200 in 260ms (next.js: 44ms, application-code: 216ms)
+✓ Compiled in 574ms
