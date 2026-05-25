@@ -1,9 +1,10 @@
-import { type PlatformProxy } from 'wrangler';
-
-type Cloudflare = Omit<PlatformProxy<Env>, 'dispose'>;
-
-declare module '@remix-run/cloudflare' {
+// Node.js/Vercel load context type augmentation
+declare module "@remix-run/server-runtime" {
   interface AppLoadContext {
-    cloudflare: Cloudflare;
+    cloudflare?: {
+      env: Record<string, string>;
+    };
   }
 }
+
+export { };
