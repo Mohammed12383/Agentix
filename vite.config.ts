@@ -126,7 +126,6 @@ export default defineConfig((config) => {
           v3_lazyRouteDiscovery: true,
         },
         serverModuleFormat: 'esm',
-        adapter: '@remix-run/node',
       }),
       UnoCSS(),
       tsconfigPaths(),

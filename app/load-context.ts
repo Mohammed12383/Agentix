@@ -1,12 +1,15 @@
-import { type PlatformProxy } from 'wrangler';
-
-type Cloudflare = Omit<PlatformProxy<Env>, 'dispose'>;
-
-declare module '@remix-run/node' {
+declare module "@remix-run/node" {
   interface AppLoadContext {
-    cloudflare: Cloudflare;
-    getAssetFromKV: any;
-    ASSET_MANIFEST: Record<string, string>;
-    ENV: Record<string, unknown>;
+    cloudflare?: {
+      env: Record<string, string>;
+    };
+  }
+}
+
+declare module "@remix-run/server-runtime" {
+  interface AppLoadContext {
+    cloudflare?: {
+      env: Record<string, string>;
+    };
   }
 }
